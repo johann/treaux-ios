@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		182E915E1F2BBD1D18D2A1B2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1245B627D416633B64E1550 /* libPods.a */; };
+		8FC0A3B01B015632002E1204 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0A3AF1B015632002E1204 /* Photo.m */; };
+		8FC0A3B41B015747002E1204 /* BackendCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FC0A3B31B015747002E1204 /* BackendCommunicator.m */; };
 		8FF25F9F1AFEBD2F00E09379 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF25F9E1AFEBD2F00E09379 /* main.m */; };
 		8FF25FA21AFEBD2F00E09379 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF25FA11AFEBD2F00E09379 /* AppDelegate.m */; };
 		8FF25FA51AFEBD2F00E09379 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF25FA41AFEBD2F00E09379 /* ViewController.m */; };
@@ -31,6 +33,10 @@
 /* Begin PBXFileReference section */
 		34496CB7F6303C4D6B321107 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		386DFD3F263D29649E0EC5B4 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		8FC0A3AE1B015632002E1204 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		8FC0A3AF1B015632002E1204 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		8FC0A3B21B015747002E1204 /* BackendCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackendCommunicator.h; sourceTree = "<group>"; };
+		8FC0A3B31B015747002E1204 /* BackendCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackendCommunicator.m; sourceTree = "<group>"; };
 		8FF25F991AFEBD2F00E09379 /* Treaux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Treaux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF25F9D1AFEBD2F00E09379 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8FF25F9E1AFEBD2F00E09379 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +74,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FC0A3B11B015721002E1204 /* Communicators */ = {
+			isa = PBXGroup;
+			children = (
+				8FC0A3B21B015747002E1204 /* BackendCommunicator.h */,
+				8FC0A3B31B015747002E1204 /* BackendCommunicator.m */,
+			);
+			name = Communicators;
+			sourceTree = "<group>";
+		};
 		8FF25F901AFEBD2E00E09379 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +106,7 @@
 		8FF25F9B1AFEBD2F00E09379 /* Treaux */ = {
 			isa = PBXGroup;
 			children = (
+				8FC0A3B11B015721002E1204 /* Communicators */,
 				8FF260431B014E6300E09379 /* Controllers */,
 				8FF260421B014E5F00E09379 /* Views */,
 				8FF260401B014E4F00E09379 /* Models */,
@@ -137,6 +153,8 @@
 			children = (
 				8FF260441B01534700E09379 /* User.h */,
 				8FF260451B01534700E09379 /* User.m */,
+				8FC0A3AE1B015632002E1204 /* Photo.h */,
+				8FC0A3AF1B015632002E1204 /* Photo.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -310,7 +328,9 @@
 				8FF260461B01534700E09379 /* User.m in Sources */,
 				8FF25FA51AFEBD2F00E09379 /* ViewController.m in Sources */,
 				8FF25FA21AFEBD2F00E09379 /* AppDelegate.m in Sources */,
+				8FC0A3B01B015632002E1204 /* Photo.m in Sources */,
 				8FF25F9F1AFEBD2F00E09379 /* main.m in Sources */,
+				8FC0A3B41B015747002E1204 /* BackendCommunicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

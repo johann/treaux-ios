@@ -1,5 +1,5 @@
 //
-//  User.h
+//  Photo.h
 //  Treaux
 //
 //  Created by Johann Kerr on 5/11/15.
@@ -9,6 +9,7 @@
 #import "MTLModel.h"
 #import <Mantle.h>
 
-@interface User : MTLModel <MTLJSONSerializing>
+
+@interface Photo : MTLModel <MTLJSONSerializing>
 
 @end
